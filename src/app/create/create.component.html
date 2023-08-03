@@ -1,0 +1,21 @@
+<form (ngSubmit)="Addfun()">
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Carname</label>
+      <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="Carname" [(ngModel)]="car.carname">
+      
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">company</label>
+      <input type="text" class="form-control" id="exampleInputPassword1" name="company" [(ngModel)]="car.company">
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Price</label>
+        <input type="number" class="form-control" id="exampleInputPassword1" name="price" [(ngModel)]="car.price">
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">features</label>
+        <input type="text" class="form-control" id="exampleInputPassword1" name="features" [(ngModel)]="car.features">
+      </div>
+   
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>

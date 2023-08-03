@@ -1,0 +1,16 @@
+<button class="btn btn-success" (click)="create()">Add New Car</button>
+<div class="row">
+    <div class="col" *ngFor="let i of car">
+        <div class="card" style="width: 18rem;">
+            <img src="..." class="card-img-top" alt="...">
+            <div><p>{{i.price}}</p></div>
+            <div class="card-body">
+              <h4 class="card-title">{{i.company}}</h4>
+              <h5 class="card-title">{{i.carname}}</h5>
+              <p class="card-text">{{i.features}}</p>
+              <button class="btn btn-outline-warning" (click)="edit(i.id)">EDIT</button>
+              <button class="btn btn-outline-danger" (click)="delete(i.id)">DELETE</button>
+            </div>
+          </div>
+    </div>
+</div>
